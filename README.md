@@ -3,9 +3,7 @@
 
 Habit Tracker built on NodeJs combining with EJS for Front-End. Also created an API service for Habit Tracker built with ReactJs where react project fetches data from this server using Api. 
 
-
-
-
+Deployed - https://habittrackerapi.onrender.com
 
 
 ## Run Locally
