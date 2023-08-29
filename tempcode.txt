@@ -1,0 +1,5 @@
+<% if(datesArray[date].status == "none")
+            { %>
+                    <img src="https://cdn-icons-png.flaticon.com/128/6941/6941889.png" alt="">
+            <!-- <label for="status" class="status-disp"><%= datesArray[date].status %></label> -->
+            } %>

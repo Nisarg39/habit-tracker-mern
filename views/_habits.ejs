@@ -1,0 +1,26 @@
+<link rel="stylesheet" href="/css/habits.css">
+<div id="habit-bar container" class="habits-container shadow-lg p-3 mb-2 pb-0  bg-light rounded">
+    <div class="row mb-2 p-1 habits-row">
+    <span class="left-side col-2">
+        <label for="habits"class="name fw-bold" ><%= HabitsList[habits].name %> : </label>
+    </span>
+    <div class="col-8">
+        <label for="desc" class="desc pt-1"><%= HabitsList[habits].desc %></label>
+    </div>
+    <div class="col-2  delete-container">
+        <a href="/delete/<%= HabitsList[habits]._id %>" >
+            <img src="https://cdn-icons-png.flaticon.com/128/992/992660.png" alt="delete" class="delete">
+        </a>
+    </div>
+
+    </div> 
+    <div class="right-side h-50"></div>
+        <div class="row"> 
+        <% datesArray = HabitsList[habits].dates %>
+        <% for (date in datesArray) {%>
+            <%- include('_dates') %>
+        <% } %> 
+        </div>
+    </div>
+
+

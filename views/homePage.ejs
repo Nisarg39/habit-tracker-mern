@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="/css/home.css">
+<div class="habits-main container position-absolute top-50 start-50 translate-middle">
+    <form action="/add" method="post" style="margin-bottom: 0px;">
+    <div class="row mx-2 habit-form">
+        <div class="col-4">
+                <label for="" class="">Habit :</label>
+                <input type="text" name="habit" placeholder="Habit">
+        </div>
+        <div class="col-6 mx-auto">
+                <label for="">Description :</label>
+                <input type="text" name="desc" placeholder="Describe your habit" class="w-75">
+        </div>
+        <div class="col-2">
+            <button type="submit" value="Add" class="btn py-0 h-100 add-button">Add</button>
+        </div>   
+    </div>
+    </form>
+    <% var datesArray %>
+    <% for(habits in HabitsList) { %>
+        <%- include('_habits') %>
+    <% } %>
+</div>

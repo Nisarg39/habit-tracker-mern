@@ -1,0 +1,38 @@
+<link rel="stylesheet" href="/css/dates.css"> 
+    <div class="col-2 pb-4">
+        <div class="col text-center h-25 pt-1 pb-1 date-cont">
+            <label class="col" for="day"><%= datesArray[date].day %> /</label>
+            <label class="col"  for="month"><%= datesArray[date].month %> /</label>
+            <label class="col" for="year"><%= datesArray[date].year %></label>
+        </div>
+            <div class="col  h-50 p-4 status-div">
+                <div class="text-center pt-2">
+                    <% if(datesArray[date].status == "none") { %>
+                        <img src="https://cdn-icons-png.flaticon.com/128/6941/6941889.png" alt="" class="status-img ">
+                    <% } %>
+                    <% if(datesArray[date].status == "notdone") { %>
+                        <img src="https://cdn-icons-png.flaticon.com/128/399/399274.png" alt="" class="status-img ">
+                    <% } %>
+                    <% if(datesArray[date].status == "done") { %>
+                        <img src="https://cdn-icons-png.flaticon.com/128/4436/4436481.png" alt="" class="status-img">
+                    <% } %>
+                </div>
+            </div>
+        <div class="col h-25">
+            <% if(datesArray[date].status == "none" || datesArray[date].status == "notdone")
+             { %>
+            <a href="/status/<%= HabitsList[habits]._id %>&<%= datesArray[date]._id %>&done" style="text-decoration: none;">
+                <div class="d-grid gap-2">
+                    <button class="btn btn-success status-btn" type="button">Mark Done</button>
+                </div>
+            </a>
+            <%} else {%>
+            <a href="/status/<%= HabitsList[habits]._id %>&<%= datesArray[date]._id %>&notdone" style="text-decoration: none;">
+                <div class="d-grid gap-2">
+                    <button class="btn btn-danger status-btn" type="button">Mark Not Done</button>
+                </div>
+            </a>
+            <% } %> 
+        </div>
+    </div>
+            

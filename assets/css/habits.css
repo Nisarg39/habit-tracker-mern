@@ -1,0 +1,30 @@
+#habit-bar{
+    margin: 2px;
+    background-color: #d3d3d3;
+}
+
+.delete{
+    height: 20px;
+}
+
+#habit-bar .left-side{
+    display: block;
+    width: 30%;
+    height: 100%;
+    bottom: 50%;
+    text-align: center;
+    margin-left: 30%;
+}
+
+.desc {
+    font-size: medium;
+}
+
+.name{
+    font-size: larger;
+}
+
+.delete-container{
+    text-align: right;
+}
+

@@ -1,0 +1,27 @@
+.status-switch{
+    height: 20px;
+}
+
+.status-div{
+    border: 1px solid black;
+    border-bottom: none;
+    border-top: none;
+}
+
+.date-cont{
+    border: 1px solid black;
+    border-radius: 5%;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    color: white;
+    background-color: #222;
+}
+
+.status-btn{
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+}
+
+.status-img{
+    width: 20px;
+}
